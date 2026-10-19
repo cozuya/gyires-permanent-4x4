@@ -1,0 +1,314 @@
+{
+  "verification_exit_code": 0,
+  "status": "PASS",
+  "started_utc": "2026-10-19T14:58:33Z",
+  "finished_utc": "2026-10-19T15:07:35Z",
+  "repository_commit_at_run": "08cf28de6cc3d9d1b0194d552a1870e374786ea0",
+  "tracked_worktree_dirty": true,
+  "github_run_url": null,
+  "github_event": null,
+  "repository_visibility": "local",
+  "identity_note": "Precommit verification is identified by source hashes; timestamps do not establish priority.",
+  "trust_note": "Theorems marked with Lean.ofReduceBool and Lean.trustCompiler rely on native_decide: the Lean compiler and runtime are trusted in addition to the kernel.",
+  "toolchain": {
+    "lean_version": "4.28.0",
+    "lean_commit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
+    "lake_version": "5.0.0-src+7e01a1b",
+    "mathlib_tag": "v4.28.0",
+    "mathlib_commit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+    "linux_x86_64": {
+      "url": "https://github.com/leanprover/lean4/releases/download/v4.28.0/lean-4.28.0-linux.tar.zst",
+      "sha256": "ceb3a3f844f7aebf63245e2b51c28d5b0ed38942c19f93cf3febd520302160bd",
+      "directory": "lean-4.28.0-linux"
+    }
+  },
+  "source_sha256": {
+    ".github/workflows/verify.yml": "6a32567698378b3a4ad2e3a2c5a3e00126439cae21294b5038e1fd9be33641dc",
+    ".gitignore": "f7e8dceca56d968438711df14725064785f189679423f57c7eb0158b8441b65d",
+    "GyiresCompute/Basic.lean": "8c2f87f5ffe836aaf2f76bf6f8896154fc1d62b2fbcfd58a99fd8d03f73ffe5f",
+    "GyiresEquality/Assemble.lean": "7d7449d1120ec10f82f11cf28f6be3d92df67d088e78e28a3fca4e48164f4417",
+    "GyiresEquality/Cert/S_65502_64478.lean": "de139854550b639cfa3b84bc03021fd52d475059b91aba48a47edb6b9f1bc319",
+    "GyiresEquality/Cert/S_65502_64990.lean": "a3378fc5a0bdeae1fbda1a7747110c02aba6cf727d98a8b889671b35adac9f6d",
+    "GyiresEquality/Cert/S_65502_65246.lean": "ae7ef2c99c1c4b734e1b89e84833574e6394563af893af9ce0565e4098d72438",
+    "GyiresEquality/Cert/S_65502_65438.lean": "563df017689bd1312c5cced5aaf5c17fee8bf447b57f6172b8f0dcfed7a3be83",
+    "GyiresEquality/Cert/S_65502_65486.lean": "eabb82c7147a142bf461aeebf53cf3d11aa182486abf247731d25b0aa487634b",
+    "GyiresEquality/Cert/S_65502_65498.lean": "abd537273ea4bab26e76913dc3929a25500b728efb57f6e6fb7c0de2148d8db2",
+    "GyiresEquality/Cert/S_65502_65500.lean": "40fdd0f405f2f040565d658c5993fa9796a0ccffdab750610670dd5fe7d96458",
+    "GyiresEquality/Cert/S_65518_65006.lean": "10aed530c7c5913f96f8926e3028161865fc3a4bd3af4204758311252b17330a",
+    "GyiresEquality/Cert/S_65518_65486.lean": "587ee0c1266be907c7892d706023d4e2e2dab7cb32d8b4330249610be4bd2772",
+    "GyiresEquality/Cert/S_65518_65516.lean": "d281cfa71f908f7e9cfcdba7e8d93ae830bed43b60ce21e38ff5f33b2d8f7aba",
+    "GyiresEquality/Cert/S_65532_65468.lean": "fe78d0ddb4ec07221f75f638242a1acea7059076b8393ac93915cd0546c35413",
+    "GyiresEquality/Cert/S_65532_65500.lean": "086e6696d99c126637eac46abd97757d49e8aedaf42ebb8fdbde136b4fe5ede3",
+    "GyiresEquality/Cert/S_65532_65516.lean": "9204c991c6ac7c55d2c00cb42b12da0db9b25c935a95d1fced6f64a3f2a58371",
+    "GyiresEquality/Equality.lean": "05588f139c0a0772a8ded4e5ca8b09259b6a70991c1fae219c625031766ab07c",
+    "GyiresEquality/Ratio.lean": "656a21693c19c630edb7273603790067294ba47853bc9a1305a034ef326d87ce",
+    "GyiresEquality/StrictSound.lean": "ff6ca5f8436cb1fe578ca4ce0674cd20bb9c426b67e79e4940de952374724c71",
+    "GyiresStrictCompute/Basic.lean": "aa57b460e9481b13b2157c65fb3572f84dfecd442740060154ce2e391ce84279",
+    "RequestProject/Cert/Assemble.lean": "0d0602da0c8749de1510a4ce02b0b4a9ac1057773a70714561e1b27dd0e27ea4",
+    "RequestProject/Cert/C_65502_64478.lean": "4605e3a3f670a2f9cc2b323e501136a9e3718fbfce3b44345cb5f3169b858ba0",
+    "RequestProject/Cert/C_65502_64990.lean": "1dcf5c0563b7d85501db51585ac5a4a8eac75a384b074dc01a7aeb0fb73246be",
+    "RequestProject/Cert/C_65502_65246.lean": "fc4f86853aa906139923224d2fd4bf5b947136a6be3a94397d95f3f81381b359",
+    "RequestProject/Cert/C_65502_65438.lean": "3e4177c8e9142885a43f14dbe94fff35f5807a9bd08f3d4ecab26dc680c3afa6",
+    "RequestProject/Cert/C_65502_65486.lean": "08d58e875a0a59c5fbe804479f8523f32266e4fc50f3f1e620ed8504fa590bc1",
+    "RequestProject/Cert/C_65502_65498.lean": "e28f67a01a27a656efaf8147c86cec50c8985d5d9f5f71d4288fa5f345c35cd9",
+    "RequestProject/Cert/C_65502_65500.lean": "0ae241a0520fa26804ccfffab721789f6a1f49de8c14f77c57bce497fa86064a",
+    "RequestProject/Cert/C_65518_65006.lean": "67cde21d51d844aca08dcc0102bb64f885cb20ca290d6c056caa9c71b3474b25",
+    "RequestProject/Cert/C_65518_65486.lean": "b41ca18bf4cd9206c3d8c6948161942b2e021febed4bdf3cc1f8a47d4b6d7b5e",
+    "RequestProject/Cert/C_65518_65516.lean": "bf6bb57f31020ff794b5e4850437fd8a9626b4f1ee0bd8008029cc814a546ecc",
+    "RequestProject/Cert/C_65532_65468.lean": "e6b435dadcfaef0747fca3868d65cee170eaf558b71e5b2d03b93a5798363758",
+    "RequestProject/Cert/C_65532_65500.lean": "26410549c8616d097fcc9dae75865286af6dcd2ccd15449a3aa7e9f03ee189cf",
+    "RequestProject/Cert/C_65532_65516.lean": "516b5d1c0c09546a74c756811b8c8698485a8e9c855b6281b93e8103b1026abd",
+    "RequestProject/Cert/Defs.lean": "333f8716a5a7a8246cfec7167deea82259962b182a5b62e568615c99ac6819e8",
+    "RequestProject/Faces.lean": "cb3110c7642cc38e0b3e52377b8fe2a7172c58f2a4983c88e6f7e938381f5fd1",
+    "RequestProject/Gyires.lean": "39b53e12f0554c368a554970afd7258427eaa1971100e71144b39acf73f7ed3d",
+    "RequestProject/HEval.lean": "7b9356a4a283952be6b7641116f32c38fd9bba4a9590c9e43c1974c61b677e64",
+    "RequestProject/Main.lean": "929b0bddef0b781f3fb42c7a99f252dc0bda7331f698104f7075e12ff637c52d",
+    "RequestProject/PolySound.lean": "6416124e178d82bbaf38b6ad8782af1eb68fcee63026cb68839e08a20cec946e",
+    "RequestProject/Reduction.lean": "0232ced3af3cdce479d2be122664372c3a1162475bc9e4b265e1e32929cf9450",
+    "RequestProject/TreeSound.lean": "1291772d90ae68e06f1ded985d53f450b165fd15f6ba659834eddac3afec774f",
+    "TOOLCHAIN.json": "d6404e6c2c2412e3deb5b8f5fba79f6021b82e7116c4ce85b8927d7b38d59353",
+    "Verification.lean": "848fc2b94550e2074771e5a012a71b163e3eacb048377850de2a836912fcc361",
+    "crosscheck/leafcheck.cpp": "a050b6997e83c11717c4fd66797f1df114cfd674323056d72842e36b401a7818",
+    "crosscheck/run.sh": "3bc02f8114bb655f57110419d1a61243dbca741e5e2956fceb4508819826710f",
+    "crosscheck/tree.py": "30a209f9f3fabfed785655c337c2bb2d22b2c3440b9f25c9b9c1ad35eab91559",
+    "lake-manifest.json": "116c6ef00aa899fb38c08c5e4c92c0e434d0e7f9d574fcb5d4d42cc90ffb07cb",
+    "lakefile.toml": "373b57da11e7405e25360b3e7aa345d1c1de287065bc80504647d7dd2b8767da",
+    "lean-toolchain": "db7bb24b756d745bbde83fe92718b51bd3625dae3701ba0f598d0eedcd3f3028",
+    "original/RESULTS.original.txt": "abf09678127efe3e73dce5a66d2a8ebdd42a1d3ca81b804fbdcc8fb13f596390",
+    "original/RESULTS_certificate/generate.py": "46fa16ff7971ec80cad55d0fbd26f59e2bb2e873d6f79dfd86201cb3cf17adeb",
+    "original/RESULTS_certificate/verification.txt": "a8e15dd3b5b67e159e94c054b699b8aa037b54e25e6c7afc721ce42748764b10",
+    "original/RESULTS_certificate/verify.cpp": "8c7a0097054f43a20b5f72011ea3dd10a01c2e543d0341d2724109f4605a3653",
+    "provenance/aristotle/ARISTOTLE_SUMMARY_run_c0b83b52.md": "4dd6642e079ee007818f1d5b2ead8d1dc6d3183cc4d40060e275ae31b678ac6b",
+    "provenance/aristotle/ARISTOTLE_SUMMARY_run_eb710500.md": "d19f9cc5f604237e36d23cdf6d476249abdbc5022bdc5203d762d365b4faf085",
+    "provenance/aristotle/README.md": "1677dec67853bd1889abd44b2412553cacb80451570f2189a16370f5979cf3e4",
+    "provenance/aristotle/REPRODUCE.md": "e43b8011300df3a9c553743c6293074e2369a66473c0245036213b9ee20a2d2c",
+    "provenance/aristotle/gyires-lean-complete.tar.gz": "7c191f7dd261848e384eccf42c56c98b3982a192ce3496e64662bd69af1ed76c",
+    "scripts/PrintAxioms.lean": "ff6ed189f36b039d21fef6e73be1d5c76d6a0050c067511b6098c6098d25e572",
+    "scripts/audit.py": "44b2a15dbbcd946a20ede720f34a592c464c6f067e83ff7f8150611c75fa3bd0",
+    "scripts/check-package.py": "db60a218a964ae062e86f810ce0734e534b11884dcb1a4e573164891a5cd5a5d",
+    "scripts/fetch-deps.sh": "227118ce7b6cd69b78985d62b62a2408644ff3a1b7f6d60f513c2e3746ef5cb1",
+    "scripts/install-lean.sh": "38c6e63f9a8829ab30f8df44e38f3c3953b1f3607cf04d1b0a6d08623a5272da",
+    "verify.sh": "12273580f92a2802d8312c7d270666a3249442ddc61be70a3f222af3b53a58b4"
+  },
+  "audited_theorems": [
+    "Gyires.gyires_4x4",
+    "Gyires.gyires_4x4_eq_iff",
+    "Gyires.gyires_4x4_ratio",
+    "Gyires.gyires_4x4_ratio_eq_iff",
+    "Gyires.gyires_4x4_strict",
+    "Gyires.permanent_gram_add_ge",
+    "Gyires.permanent_gram_le",
+    "Gyires.permanent_gram_lt",
+    "GyiresVerification.denominator_pos",
+    "GyiresVerification.equality_iff",
+    "GyiresVerification.gram_comparison",
+    "GyiresVerification.inequality",
+    "GyiresVerification.ratio",
+    "GyiresVerification.ratio_equality_iff",
+    "GyiresVerification.stronger"
+  ],
+  "expected_axioms": {
+    "Gyires.gyires_4x4": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_eq_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_ratio": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_ratio_eq_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_strict": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.permanent_gram_add_ge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.permanent_gram_le": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.permanent_gram_lt": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.denominator_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.equality_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.gram_comparison": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.inequality": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.ratio": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.ratio_equality_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.stronger": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "axiom_dependencies": {
+    "Gyires.gyires_4x4": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.permanent_gram_le": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.permanent_gram_add_ge": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.permanent_gram_lt": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_strict": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_eq_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_ratio": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "Gyires.gyires_4x4_ratio_eq_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.inequality": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.equality_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.ratio": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.denominator_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.ratio_equality_iff": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.stronger": [
+      "Classical.choice",
+      "Lean.ofReduceBool",
+      "Lean.trustCompiler",
+      "Quot.sound",
+      "propext"
+    ],
+    "GyiresVerification.gram_comparison": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "transcript": "verification.log",
+  "theorem_types_and_axioms": "kernel-check.log"
+}

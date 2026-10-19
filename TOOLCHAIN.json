@@ -1,0 +1,12 @@
+{
+  "lean_version": "4.28.0",
+  "lean_commit": "7e01a1bf5c70fc6167d49c345d3bf80596e9a79b",
+  "lake_version": "5.0.0-src+7e01a1b",
+  "mathlib_tag": "v4.28.0",
+  "mathlib_commit": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "linux_x86_64": {
+    "url": "https://github.com/leanprover/lean4/releases/download/v4.28.0/lean-4.28.0-linux.tar.zst",
+    "sha256": "ceb3a3f844f7aebf63245e2b51c28d5b0ed38942c19f93cf3febd520302160bd",
+    "directory": "lean-4.28.0-linux"
+  }
+}

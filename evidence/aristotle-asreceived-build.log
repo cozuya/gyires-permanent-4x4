@@ -1,0 +1,127 @@
+
+$ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-10-19T05:57:48Z
+EXIT_CODE=0 WALL_SECONDS=0.0
+
+$ lean --version
+Lean (version 4.28.0, x86_64-unknown-linux-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)
+EXIT_CODE=0 WALL_SECONDS=0.0
+
+$ sha256sum -c /home/cozuya/coldharvest/gyires-build/logs/manifest_before.txt
+lake-manifest.json: OK
+EXIT_CODE=0 WALL_SECONDS=0.0
+
+$ git -C .lake/packages/mathlib rev-parse HEAD
+8f9d9cff6bd728b17a24e163c9402775d9e6a365
+EXIT_CODE=0 WALL_SECONDS=0.0
+
+$ test ! -e .lake/build
+EXIT_CODE=0 WALL_SECONDS=0.0
+
+$ lake build RequestProject GyiresCompute
+✔ [8026/8052] Built GyiresCompute.Basic (413ms)
+✔ [8028/8052] Built GyiresCompute.Basic:c.o (503ms)
+✔ [8029/8052] Built GyiresCompute:shared (226ms)
+✔ [8030/8052] Built RequestProject.Cert.Defs (273ms)
+✔ [8031/8052] Built RequestProject.Cert.C_65502_65500 (38s)
+✔ [8032/8052] Built RequestProject.Cert.C_65518_65486 (38s)
+✔ [8033/8052] Built RequestProject.Cert.C_65502_65486 (38s)
+✔ [8034/8052] Built RequestProject.Cert.C_65532_65500 (38s)
+✔ [8035/8052] Built RequestProject.Cert.C_65518_65516 (38s)
+✔ [8036/8052] Built RequestProject.Cert.C_65532_65516 (38s)
+✔ [8037/8052] Built RequestProject.Cert.C_65502_65438 (119s)
+✔ [8038/8052] Built RequestProject.Cert.C_65532_65468 (120s)
+✔ [8039/8052] Built RequestProject.Cert.C_65502_65246 (120s)
+✔ [8040/8052] Built RequestProject.Cert.C_65518_65006 (120s)
+✔ [8041/8052] Built RequestProject.Cert.C_65502_64990 (121s)
+✔ [8042/8052] Built RequestProject.Cert.C_65502_65498 (121s)
+✔ [8043/8052] Built RequestProject.Main (132s)
+✔ [8044/8052] Built RequestProject.Reduction (133s)
+✔ [8045/8052] Built RequestProject.PolySound (133s)
+✔ [8046/8052] Built RequestProject.HEval (9.8s)
+✔ [8047/8052] Built RequestProject.Faces (5.8s)
+✔ [8048/8052] Built RequestProject.TreeSound (7.5s)
+✔ [8049/8052] Built RequestProject.Cert.C_65502_64478 (281s)
+✔ [8050/8052] Built RequestProject.Cert.Assemble (5.4s)
+✔ [8051/8052] Built RequestProject.Gyires (4.4s)
+Build completed successfully (8052 jobs).
+EXIT_CODE=0 WALL_SECONDS=302.6
+
+$ lake env lean scripts/PrintAxioms.lean
+'Gyires.gyires_4x4' depends on axioms: [propext, Classical.choice, Lean.ofReduceBool, Lean.trustCompiler, Quot.sound]
+'Gyires.permanent_gram_le' depends on axioms: [propext,
+ Classical.choice,
+ Lean.ofReduceBool,
+ Lean.trustCompiler,
+ Quot.sound]
+EXIT_CODE=0 WALL_SECONDS=18.3
+
+$ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-10-19T06:03:09Z
+EXIT_CODE=0 WALL_SECONDS=0.0
+	Command being timed: "/home/cozuya/coldharvest/gyires-build/build_asreceived.sh"
+	User time (seconds): 1311.41
+	System time (seconds): 138.27
+	Percent of CPU this job got: 451%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:20.97
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 6366684
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 593014
+	Minor (reclaiming a frame) page faults: 2861092
+	Voluntary context switches: 1164036
+	Involuntary context switches: 17014
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+OUTER_EXIT=0
+
+# Dependency fetch for the as-received project (lake exe cache get), final lines:
+Completed successfully!
+
+real	0m51.925s
+user	1m27.351s
+sys	0m58.889s
+EXIT_CODE=0
+# Source hashes of the extracted as-received project:
+712380bac82bf0df4ecc7e0a21431e937d751b6a9c45a26a2deb71f920808089  ./.gitignore
+4dd6642e079ee007818f1d5b2ead8d1dc6d3183cc4d40060e275ae31b678ac6b  ./ARISTOTLE_SUMMARY.md
+8c2f87f5ffe836aaf2f76bf6f8896154fc1d62b2fbcfd58a99fd8d03f73ffe5f  ./GyiresCompute/Basic.lean
+1677dec67853bd1889abd44b2412553cacb80451570f2189a16370f5979cf3e4  ./README.md
+e43b8011300df3a9c553743c6293074e2369a66473c0245036213b9ee20a2d2c  ./REPRODUCE.md
+abf09678127efe3e73dce5a66d2a8ebdd42a1d3ca81b804fbdcc8fb13f596390  ./RESULTS.md
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./RequestProject/.gitkeep
+0d0602da0c8749de1510a4ce02b0b4a9ac1057773a70714561e1b27dd0e27ea4  ./RequestProject/Cert/Assemble.lean
+4605e3a3f670a2f9cc2b323e501136a9e3718fbfce3b44345cb5f3169b858ba0  ./RequestProject/Cert/C_65502_64478.lean
+1dcf5c0563b7d85501db51585ac5a4a8eac75a384b074dc01a7aeb0fb73246be  ./RequestProject/Cert/C_65502_64990.lean
+fc4f86853aa906139923224d2fd4bf5b947136a6be3a94397d95f3f81381b359  ./RequestProject/Cert/C_65502_65246.lean
+3e4177c8e9142885a43f14dbe94fff35f5807a9bd08f3d4ecab26dc680c3afa6  ./RequestProject/Cert/C_65502_65438.lean
+08d58e875a0a59c5fbe804479f8523f32266e4fc50f3f1e620ed8504fa590bc1  ./RequestProject/Cert/C_65502_65486.lean
+e28f67a01a27a656efaf8147c86cec50c8985d5d9f5f71d4288fa5f345c35cd9  ./RequestProject/Cert/C_65502_65498.lean
+0ae241a0520fa26804ccfffab721789f6a1f49de8c14f77c57bce497fa86064a  ./RequestProject/Cert/C_65502_65500.lean
+67cde21d51d844aca08dcc0102bb64f885cb20ca290d6c056caa9c71b3474b25  ./RequestProject/Cert/C_65518_65006.lean
+b41ca18bf4cd9206c3d8c6948161942b2e021febed4bdf3cc1f8a47d4b6d7b5e  ./RequestProject/Cert/C_65518_65486.lean
+bf6bb57f31020ff794b5e4850437fd8a9626b4f1ee0bd8008029cc814a546ecc  ./RequestProject/Cert/C_65518_65516.lean
+e6b435dadcfaef0747fca3868d65cee170eaf558b71e5b2d03b93a5798363758  ./RequestProject/Cert/C_65532_65468.lean
+26410549c8616d097fcc9dae75865286af6dcd2ccd15449a3aa7e9f03ee189cf  ./RequestProject/Cert/C_65532_65500.lean
+516b5d1c0c09546a74c756811b8c8698485a8e9c855b6281b93e8103b1026abd  ./RequestProject/Cert/C_65532_65516.lean
+333f8716a5a7a8246cfec7167deea82259962b182a5b62e568615c99ac6819e8  ./RequestProject/Cert/Defs.lean
+cb3110c7642cc38e0b3e52377b8fe2a7172c58f2a4983c88e6f7e938381f5fd1  ./RequestProject/Faces.lean
+39b53e12f0554c368a554970afd7258427eaa1971100e71144b39acf73f7ed3d  ./RequestProject/Gyires.lean
+7b9356a4a283952be6b7641116f32c38fd9bba4a9590c9e43c1974c61b677e64  ./RequestProject/HEval.lean
+929b0bddef0b781f3fb42c7a99f252dc0bda7331f698104f7075e12ff637c52d  ./RequestProject/Main.lean
+6416124e178d82bbaf38b6ad8782af1eb68fcee63026cb68839e08a20cec946e  ./RequestProject/PolySound.lean
+0232ced3af3cdce479d2be122664372c3a1162475bc9e4b265e1e32929cf9450  ./RequestProject/Reduction.lean
+1291772d90ae68e06f1ded985d53f450b165fd15f6ba659834eddac3afec774f  ./RequestProject/TreeSound.lean
+116c6ef00aa899fb38c08c5e4c92c0e434d0e7f9d574fcb5d4d42cc90ffb07cb  ./lake-manifest.json
+d57d02ffea6b160373fccd380af7d98ff365fc80c1162e963b758763e3a703cf  ./lakefile.toml
+db7bb24b756d745bbde83fe92718b51bd3625dae3701ba0f598d0eedcd3f3028  ./lean-toolchain
+ff6ed189f36b039d21fef6e73be1d5c76d6a0050c067511b6098c6098d25e572  ./scripts/PrintAxioms.lean

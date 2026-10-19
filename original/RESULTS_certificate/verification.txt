@@ -1,0 +1,7 @@
+PASS
+flags: 65376
+coefficients: 1589290560
+zero coefficients: 653760
+largest coefficient: 45478883488
+All coefficients are nonnegative.
+All proper-face-center pure-power coefficients are positive.

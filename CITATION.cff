@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "Please cite this proof using the metadata below and identify the commit consulted."
+title: "Gyires' Permanent Inequality for 4×4 Doubly Stochastic Matrices"
+type: software
+license: Apache-2.0
+authors:
+  - family-names: Ozols
+    given-names: Chris
+    website: "https://github.com/cozuya"
+url: "https://github.com/cozuya/gyires-permanent-4x4"
+repository-code: "https://github.com/cozuya/gyires-permanent-4x4"
+abstract: >-
+  A proof of the n = 4 case of Gyires' permanent inequality (Conjecture 20 in
+  Cheon and Wanless's update of Minc's list): for every real doubly stochastic
+  4×4 matrix A, 128 per(A)^2 >= 3[per(AA^T) + per(A^TA) + 2 per(A^2)], with
+  equality exactly at the matrix with all entries 1/4. The general-n conjecture
+  is not addressed. By Chris Ozols, with AI-assisted proof development and
+  formalization; the Lean formalization of the inequality was produced by
+  Harmonic's Aristotle. Verified with Lean 4.28.0 and Mathlib v4.28.0; the
+  finite certificate is checked with native_decide, so the Lean compiler is
+  trusted in addition to the kernel. No claim of established worldwide priority.
+keywords:
+  - permanent
+  - doubly stochastic matrix
+  - Gyires conjecture
+  - Minc's conjectures
+  - Lean
+  - Mathlib
+  - formal proof
+preferred-citation:
+  type: report
+  title: "Gyires' Permanent Inequality for 4×4 Doubly Stochastic Matrices"
+  authors:
+    - family-names: Ozols
+      given-names: Chris
+  url: "https://github.com/cozuya/gyires-permanent-4x4"
+references:
+  - type: conference-paper
+    title: "On permanent inequalities"
+    authors:
+      - family-names: Gyires
+        given-names: Béla
+    collection-title: "Combinatorics (Proc. Fifth Hungarian Colloq., Keszthely, 1976), Colloq. Math. Soc. János Bolyai 18"
+    publisher:
+      name: North-Holland
+    year: 1978
+    start: 471
+    end: 484
+  - type: article
+    title: "An update on Minc's survey of open problems involving permanents"
+    authors:
+      - family-names: Cheon
+        given-names: Gi-Sang
+      - family-names: Wanless
+        given-names: Ian M.
+    journal: "Linear Algebra and its Applications"
+    volume: 403
+    year: 2005
+    start: 314
+    end: 342
+    doi: "10.1016/j.laa.2005.02.030"

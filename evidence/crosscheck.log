@@ -1,0 +1,48 @@
+$ date -u
+2026-10-19T06:17:31Z
+$ sha256sum crosscheck/tree.py crosscheck/leafcheck.cpp crosscheck/run.sh
+30a209f9f3fabfed785655c337c2bb2d22b2c3440b9f25c9b9c1ad35eab91559  crosscheck/tree.py
+a050b6997e83c11717c4fd66797f1df114cfd674323056d72842e36b401a7818  crosscheck/leafcheck.cpp
+3bc02f8114bb655f57110419d1a61243dbca741e5e2956fceb4508819826710f  crosscheck/run.sh
+$ g++ --version
+g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+$ python3 --version
+Python 3.14.4
+$ OMP_NUM_THREADS=8 bash crosscheck/run.sh
+cert_65532_65516: structure OK, 1680 leaf cones
+cert_65532_65500: structure OK, 1680 leaf cones
+cert_65532_65468: structure OK, 6384 leaf cones
+cert_65518_65516: structure OK, 1680 leaf cones
+cert_65518_65486: structure OK, 1680 leaf cones
+cert_65518_65006: structure OK, 6384 leaf cones
+cert_65502_65500: structure OK, 1680 leaf cones
+cert_65502_65498: structure OK, 6384 leaf cones
+cert_65502_65486: structure OK, 1680 leaf cones
+cert_65502_65438: structure OK, 6384 leaf cones
+cert_65502_65246: structure OK, 6384 leaf cones
+cert_65502_64990: structure OK, 6384 leaf cones
+cert_65502_64478: structure OK, 16992 leaf cones
+total leaf cones: 65376; (generators, last generator entry sum): {(10, 4): 65376}
+wrote 65376 leaves; monomial counts [10, 55, 715, 24310]
+constant C = 32, threads = 8
+leaf cones checked: 65376
+leaves with a negative coefficient (C*per^2 < 3*perGram): 0
+leaves whose tight set is not {t0^8, t0^7*t_k}: 0
+leaves with a non-strict pure power t_k^8 (k >= 1): 0
+minimum ratio over non-tight coefficients: 1.005291005
+largest coefficient: 7.452233e+11 (40 bits)
+self-test failures: 0, overflow guard tripped: 0
+RESULT: PASS
+
+Negative control (31 in place of 32; every leaf must fail):
+constant C = 31, threads = 8
+leaf cones checked: 65376
+leaves with a negative coefficient (C*per^2 < 3*perGram): 65376
+leaves whose tight set is not {t0^8, t0^7*t_k}: 65376
+leaves with a non-strict pure power t_k^8 (k >= 1): 0
+minimum ratio over non-tight coefficients: 0.968750000
+largest coefficient: 7.219351e+11 (40 bits)
+self-test failures: 0, overflow guard tripped: 0
+RESULT: FAIL
+NEGATIVE_CONTROL=PASS
+EXIT_CODE=0
