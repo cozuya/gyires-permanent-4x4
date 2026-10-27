@@ -2,6 +2,14 @@
 
 **By Chris Ozols, with AI-assisted proof development and formalization.**
 
+> **Proof available for n = 4; no novelty claim.** A bounded search found no
+> earlier proof of the complete 4×4 case in the sources reviewed. I do not
+> claim novelty, first discovery, or that any problem listing has been closed.
+> This repository makes the 4×4 argument and its Lean checks available to
+> anyone investigating it. The general-n conjecture is not resolved here.
+> The proof's `native_decide` compiler/runtime trust is disclosed below.
+> See the [prior-art review](PRIOR_ART.md).
+
 This repository proves the **n = 4 case** of a permanent inequality conjectured by
 **Béla Gyires** (published 1978). It is recorded as Conjecture 20 in Cheon and
 Wanless's update of Minc's list of open problems on permanents. For every real
@@ -159,6 +167,20 @@ Formal verification establishes the stated results relative to Lean and the trus
 above. It does not establish historical priority. [PRIOR_ART.md](PRIOR_ART.md) records
 the literature review and its access limitations. No earlier unrestricted proof of the
 4×4 case was located in the sources examined.
+
+## Discovery and novelty-checking summary
+
+**Search identifiers:** Gyires' permanent inequality; Béla Gyires; Cheon and
+Wanless Conjecture 20; Minc's list of permanent conjectures; permanent of
+doubly stochastic 4×4 matrices; Gyires n=4 proof; Lean Gyires 4x4.
+
+**Exact scope:** The inequality and equality case for **real 4×4 doubly
+stochastic matrices** are supplied here; no proof for general n is claimed.
+The [Lean statements](Verification.lean), [verification report](VERIFICATION_REPORT.md),
+[finite-certificate cross-check](crosscheck/README.md), and
+[prior-art review](PRIOR_ART.md) enable a direct novelty check. The main
+theorems rely on `native_decide` and its documented compiler trust, not
+only the Lean kernel.
 
 ## License
 
