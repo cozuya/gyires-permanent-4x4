@@ -18,7 +18,9 @@ abstract: >-
   formalization; the Lean formalization of the inequality was produced by
   Harmonic's Aristotle. Verified with Lean 4.28.0 and Mathlib v4.28.0; the
   finite certificate is checked with native_decide, so the Lean compiler is
-  trusted in addition to the kernel. No claim of established worldwide priority.
+  trusted in addition to the kernel. A bounded prior-art review located no
+  earlier full 4x4 proof in the sources examined. No claim of novelty, first
+  discovery, historical priority, or official closure of a problem listing.
 keywords:
   - permanent
   - doubly stochastic matrix
@@ -27,6 +29,11 @@ keywords:
   - Lean
   - Mathlib
   - formal proof
+  - Cheon Wanless Conjecture 20
+  - Minc permanent conjectures
+  - Gyires permanent inequality n=4
+  - 4x4 permanent inequality
+  - native_decide
 preferred-citation:
   type: report
   title: "Gyires' Permanent Inequality for 4×4 Doubly Stochastic Matrices"
