@@ -68,10 +68,11 @@ of $\Omega_4$.
 ## Novelty statement
 
 An AI-assisted literature review (October 16, 2026), with a bounded update on October 19,
-2026, located **no earlier unrestricted proof of the 4×4 case** in the sources examined. On
-that evidence this appears to be a new resolution of the $n=4$ case. This is negative
-evidence within the scope of those searches. It is not established worldwide priority and
-not independent expert confirmation.
+2026, located **no earlier unrestricted proof of the 4×4 case** in the sources examined.
+This is only a finding about the sources checked, **not a claim of novelty, first
+discovery, historical priority, or an official change to any conjecture listing**.
+The purpose of this repository is to provide a checkable proof for researchers
+investigating this case.
 
 What was already known or conjectured, and is not claimed here:
 
@@ -80,7 +81,7 @@ What was already known or conjectured, and is not claimed here:
 - the general methods: Birkhoff decomposition, subdivision into cones, symmetry
   reduction, nonnegative-coefficient certificates, and exact polynomial arithmetic.
 
-**Possible contributions:** a complete proof for $n=4$ with its equality case; the stronger
+**Results provided in this repository:** a complete proof for $n=4$ with its equality case; the stronger
 inequality $3\mathrm{per}(AA^T)\le32\mathrm{per}(A)^2$ on $\Omega_4$; and a Lean
 formalization of all of these, under the trust model described in the [README](README.md).
 
