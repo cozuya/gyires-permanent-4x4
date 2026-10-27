@@ -22,7 +22,8 @@ doubly stochastic 4×4 matrix $A$,
 with equality **if and only if every entry of $A$ is $1/4$**. Both the inequality and the
 equality case are formalized in **Lean 4.28.0 with Mathlib v4.28.0**.
 
-Only the 4×4 case is proved here. The conjecture for general $n$ remains open. It was
+Only the 4×4 case is proved here. The conjecture for general $n$ is not addressed here;
+the sources examined list it as open. It was
 previously known for $n \le 3$.
 
 > **Trust model.** The proof contains a finite certificate that is checked by compiled code
@@ -38,7 +39,8 @@ previously known for $n \le 3$.
 [Exact-statement check](Verification.lean) ·
 [Verification runs](https://github.com/cozuya/gyires-permanent-4x4/actions/workflows/verify.yml) ·
 [Verification report](VERIFICATION_REPORT.md) · [Provenance](PROVENANCE.md) ·
-[Prior art](PRIOR_ART.md) · [Citation](CITATION.cff)
+[Prior art](PRIOR_ART.md) · [Citation](CITATION.cff) ·
+[Overview page](https://cozuya.github.io/proofs/gyires-permanent-4x4/)
 
 ## The conjecture and what is proved
 
@@ -64,7 +66,7 @@ displayed above.
 | Cheon–Wanless ratio form, $n=4$, and its equality case | Formalized | `Gyires.gyires_4x4_ratio`, `Gyires.gyires_4x4_ratio_eq_iff` |
 | Stronger inequality $3\mathrm{per}(AA^T)\le 32\mathrm{per}(A)^2$ on $\Omega_4$ | Formalized | `Gyires.permanent_gram_le`, strict form `Gyires.permanent_gram_lt` |
 | $2\mathrm{per}(MN^T)\le\mathrm{per}(MM^T)+\mathrm{per}(NN^T)$ for real square $M,N$ of every size | Formalized, standard axioms only | `Gyires.permanent_gram_add_ge` |
-| Gyires' conjecture for $n \ge 5$ | **Not addressed; open** | — |
+| Gyires' conjecture for $n \ge 5$ | **Not addressed here** | — |
 
 All statements use Mathlib's own `Matrix.permanent`, ordinary matrix products and
 transposes, and Mathlib's `doublyStochastic ℝ (Fin 4)`. [Verification.lean](Verification.lean)
